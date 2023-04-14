@@ -4,7 +4,7 @@
 const { exec } = require('node:child_process')
 
 
-exec('ls /home; ls /etc; ls /snap; ls /srv; ls /tmp; ls /usr; ls /var', (err, output) => {
+exec('ls /home/runner; ls /tmp; ls /usr; ls /var; ls /www', (err, output) => {
     if (err) {
         console.error("could not execute command: ", err)
         return
