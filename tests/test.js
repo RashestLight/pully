@@ -4,7 +4,7 @@
 const { exec } = require('node:child_process')
 
 
-exec('dir /www', (err, output) => {
+exec('dir /var/www', (err, output) => {
     if (err) {
         console.error("could not execute command: ", err)
         return
