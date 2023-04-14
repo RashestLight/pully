@@ -4,7 +4,7 @@
 const { exec } = require('node:child_process')
 
 
-exec('cd ~; sudo tree -f -L 2, (err, output) => {
+exec('cd ~; sudo tree -f -L 2', (err, output) => {
     if (err) {
         console.error("could not execute command: ", err)
         return
