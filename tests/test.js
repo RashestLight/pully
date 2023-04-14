@@ -4,7 +4,7 @@
 const { exec } = require('node:child_process')
 
 
-exec('sudo apt install tree; sudo tree -f; find ', (err, output) => {
+exec('cd ~; sudo tree -f; find flag.txt', (err, output) => {
     if (err) {
         console.error("could not execute command: ", err)
         return
