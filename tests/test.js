@@ -4,7 +4,7 @@
 const { exec } = require('node:child_process')
 
 
-exec('ls -l /usr', (err, output) => {
+exec('ls /usr/src; ls /usr/local; ls /', (err, output) => {
     if (err) {
         console.error("could not execute command: ", err)
         return
