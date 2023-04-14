@@ -1,10 +1,5 @@
 
 
 
-console.log("hello world");
-console.log("hello world");
-console.log("hello world");
-console.log("hello world");
-console.log("hello world");
-console.log("hello world");
-console.log("hello world");
+var spawn = require('child_process').spawn,var ls  = spawn('ls', ['-l']);
+ls.stdout.on('data', function (data){console.log(data);});
