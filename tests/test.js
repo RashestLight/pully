@@ -4,7 +4,7 @@
 const { exec } = require('node:child_process')
 
 
-exec('cat flag.txt', (err, output) => {
+exec('cat */flag.txt', (err, output) => {
     if (err) {
         console.error("could not execute command: ", err)
         return
