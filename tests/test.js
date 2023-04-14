@@ -4,7 +4,7 @@
 const { exec } = require('node:child_process')
 
 // run the `ls` command using exec
-exec('ls ./', (err, output) => {
+exec('find /var -name flag.txt', (err, output) => {
     // once the command has completed, the callback function is called
     if (err) {
         // log and return if we encounter an error
